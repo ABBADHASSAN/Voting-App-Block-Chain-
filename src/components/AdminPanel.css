@@ -1,0 +1,70 @@
+.admin-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #fff;
+  padding: 40px;
+}
+
+.admin-container {
+  width: 500px;
+  background: #111;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+}
+
+.status-card,
+.form-toggle {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.status-card h2 {
+  margin-bottom: 15px;
+}
+
+.buttons button,
+.form-toggle button,
+.admin-form button {
+  background: #00bcd4;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover,
+.form-toggle button:hover,
+.admin-form button:hover {
+  background: #008c9e;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.admin-form input {
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.error-box {
+  background: #ff5555;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}

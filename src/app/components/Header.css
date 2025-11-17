@@ -1,0 +1,119 @@
+.site-header {
+  background: linear-gradient(135deg, #0f1822, #121a26);
+  color: var(--text);
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand-section {
+  flex: 1;
+  text-align: center;
+}
+
+.brand {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.wallet-section {
+  display: flex;
+  align-items: center;
+}
+
+.wallet-connected,
+.wallet-disconnected {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wallet-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.wallet-status {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wallet-address {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--muted);
+}
+
+@media (min-width: 768px) {
+  .brand { font-size: 40px; }
+  .tagline { font-size: 18px; }
+}
+
+/* Add this to your existing Header.css file */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-link {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.admin-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+}
+
+.admin-link:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    gap: 10px;
+  }
+
+  .admin-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+

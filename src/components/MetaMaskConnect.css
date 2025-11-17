@@ -1,0 +1,151 @@
+.metamask-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.metamask-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metamask-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.metamask-card.connected {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.metamask-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.metamask-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.metamask-card p {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.connect-button,
+.install-button,
+.disconnect-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.connect-button:hover,
+.install-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.connect-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.disconnect-button {
+  background: rgba(255, 59, 48, 0.2);
+  border-color: rgba(255, 59, 48, 0.3);
+}
+
+.disconnect-button:hover {
+  background: rgba(255, 59, 48, 0.3);
+  border-color: rgba(255, 59, 48, 0.5);
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-address {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.network-info {
+  margin-top: 16px;
+}
+
+.network-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.error-message {
+  background: rgba(255, 59, 48, 0.2);
+  border: 1px solid rgba(255, 59, 48, 0.3);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 16px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.network-info p {
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 8px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .metamask-container {
+    padding: 16px;
+  }
+  
+  .metamask-card {
+    padding: 24px;
+  }
+  
+  .metamask-card h3 {
+    font-size: 20px;
+  }
+  
+  .metamask-card p {
+    font-size: 14px;
+  }
+}
